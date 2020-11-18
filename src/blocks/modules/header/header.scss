@@ -1,0 +1,51 @@
+.header {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    &__tel {
+        text-decoration: none;
+        color: $gray;
+        transition: 0.3s ease;
+        &:hover {
+            color: $orange;
+        }
+
+    }
+}
+
+.logo {
+    display: block;
+    background-repeat: no-repeat;
+    background-image: url(../../../img/logo.svg);
+    width: 120px;
+    height: 32px;
+    margin-right: 120px;
+}
+
+.nav {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+
+    &-item {
+        margin-right: 48px;
+    }
+
+    &-link {
+        text-decoration: none;
+        color: $gray;
+        transition: 0.3s ease;
+        &:hover {
+            color: $orange;
+        }
+    }
+}

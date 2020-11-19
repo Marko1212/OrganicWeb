@@ -7,10 +7,51 @@
 @import "../blocks/modules";
 
 
-body {
-    font-family: 'Jost', sans-serif;
+
+:root {
+    font-size: 16px;
 }
 
-h2 {
+body {
+    font-family: 'Jost', sans-serif;
+    color: $gray;
+}
+
+.title {
     font-family: 'Cormorant', serif;
+    font-size: 5rem;
+    span {
+        font-style: italic;
+    }
+}
+
+.btn {
+    color: $white;
+    background-color: $orange;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto; 
+}
+
+.section-main {
+    background-image: url('../img/bg-1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main {
+    &-text {
+        &__description {
+            font-size: 1.12rem;
+            line-height: 1.5;
+
+        }
+    }
 }

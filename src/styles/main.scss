@@ -68,4 +68,22 @@ body {
 
         }
     }
+    &-visual {
+        border: 1px solid rgba($gray, $alpha);
+        border-radius: 100%;
+        padding: 53px;
+
+        &__image {
+            border: 1px solid rgba($gray, $alpha);
+            border-radius: 100%;
+            padding: 21px;
+
+            img {
+                border-radius: 100%;
+                box-shadow: 15px 48px 42px 0px rgba($gray, $alpha);
+            }
+
+        }
+
+    }
 }

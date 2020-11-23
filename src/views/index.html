@@ -98,26 +98,35 @@
   <body>
     <section class="section-main">
       @@include("../blocks/modules/header/header.html")
-    </section>
-    <div class="wrapper">
-      <div class="main">
-        <div class="main-text">
-          <h1 class="title">Здоровая еда - <br /><span>это просто</span>!</h1>
-          <div class="ml">
-            <p class="main-text__description">
-              Сеть магазинов полезных продуктов питания, производство которых основано на&nbsp;принципах и&nbsp;стандартах органического чистых продуктов
-            </p>
-            <a href="" class="btn">Перейти в каталог</a>
+
+      <div class="wrapper">
+        <div class="main">
+          <div class="main-text">
+            <h1 class="title">Здоровая еда - <br /><span>это просто</span>!</h1>
+            <div class="ml">
+              <p class="main-text__description">
+                Сеть магазинов полезных продуктов питания, производство которых
+                основано на&nbsp;принципах и&nbsp;стандартах органического
+                чистых продуктов
+              </p>
+              <a href="" class="btn">Перейти в каталог</a>
+            </div>
           </div>
-        </div>
-        <div class="main-visual">
-          <div class="main-visual__image">
-            <img src="../img/image-main.png" alt="">
+          <div class="main-visual">
+            <div class="main-visual__image">
+              <img src="../img/image-main.png" alt="" />
+            </div>
+            <button class="main-visual__btn main-visual__01">
+              Авокадо <span>134 руб</span>
+            </button>
           </div>
         </div>
       </div>
-    </div>
+      <img class="section-main__image section-main__tomato" src="../img/tomato.png" alt="Tomato">
+    </section>
+
     <main></main>
+
     @@include("../blocks/modules/footer/footer.html")
     <script src="js/main.js"></script>
     <script src="js/vendor.js"></script>

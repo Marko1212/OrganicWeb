@@ -6,84 +6,125 @@
 @import "base/general";
 @import "../blocks/modules";
 
-
-
 :root {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 body {
-    font-family: 'Jost', sans-serif;
-    color: $gray;
+  font-family: "Jost", sans-serif;
+  color: $gray;
 }
 
 .title {
-    font-family: 'Cormorant', serif;
-    font-size: 5rem;
-    line-height: 1;
-    span {
-        font-style: italic;
-    }
+  font-family: "Cormorant", serif;
+  font-size: 5rem;
+  line-height: 1;
+  span {
+    font-style: italic;
+  }
 }
 
 .btn {
-    color: $white;
-    background-color: $orange;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 1.3rem 2.68rem;
-    border-radius: 2rem;
-    letter-spacing: 0.075rem;
-    box-shadow: 0px 10px 11.18px 1.82px rgba(207, 92, 13, 0.2);
+  color: $white;
+  background-color: $orange;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.3rem 2.68rem;
+  border-radius: 2rem;
+  letter-spacing: 0.075rem;
+  box-shadow: 0px 10px 11.18px 1.82px rgba(207, 92, 13, 0.2);
 }
 
 .ml {
-    margin-left: 7.6rem;
+  margin-left: 7.6rem;
 }
-  
 
 .wrapper {
-    max-width: 1440px;
-    margin: 0 auto; 
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .section-main {
-    background-image: url('../img/bg-1.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  background-image: url("../img/bg-1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 100px;
+  position: relative;
+  &__image {
+      position: absolute;
+  }
+  &__tomato {
+      right: 121px;
+      bottom: 15px;
+  }
 }
 
 .main {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    &-text {
-        flex: 0 0 40%;
-        &__description {
-            font-size: 1.12rem;
-            line-height: 1.51;
-            margin-top: 60px;
-            margin-bottom: 77px;
-
-        }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &-text {
+    flex: 0 0 40%;
+    &__description {
+      font-size: 1.12rem;
+      line-height: 1.51;
+      margin-top: 60px;
+      margin-bottom: 77px;
     }
-    &-visual {
-        border: 1px solid rgba($gray, $alpha);
+  }
+  &-visual {
+    border: 1px solid rgba($gray, $alpha);
+    border-radius: 100%;
+    padding: 53px;
+    position: relative;
+    &__image {
+      border: 1px solid rgba($gray, $alpha);
+      border-radius: 100%;
+      padding: 21px;
+
+      img {
         border-radius: 100%;
-        padding: 53px;
-
-        &__image {
-            border: 1px solid rgba($gray, $alpha);
-            border-radius: 100%;
-            padding: 21px;
-
-            img {
-                border-radius: 100%;
-                box-shadow: 15px 48px 42px 0px rgba($gray, $alpha);
-            }
-
-        }
-
+        box-shadow: 15px 48px 42px 0px rgba($gray, $alpha);
+      }
     }
+    &__btn {
+      background-color: transparent;
+      border: none;
+      color: rgba($gray, 0.8);
+      text-align: left;
+      position: absolute;
+      span {
+        color: rgba($gray, 1);
+        display: block;
+        margin-top: 6px;
+      }
+      &::before {
+        content: "";
+        display: block;
+        width: 11px;
+        height: 11px;
+        border-radius: 100%;
+        background-color: $gray;
+        box-shadow: 0 0 0 4px #fff, 0 0 0 5px $gray;
+        position: absolute;
+      }
+      &:focus {
+        outline: none;
+        &::before {
+          background-color: $orange;
+          box-shadow: 0 0 0 4px #fff, 0 0 0 5px $orange;
+        }
+      }
+    }
+
+    &__01 {
+      left: 58px;
+      top: 45px;
+      &::before {
+        left: 91px;
+        top: 22px;
+      }
+    }
+  }
 }

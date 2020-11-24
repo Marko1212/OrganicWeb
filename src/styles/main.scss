@@ -52,11 +52,11 @@ body {
   padding-bottom: 100px;
   position: relative;
   &__image {
-      position: absolute;
+    position: absolute;
   }
   &__tomato {
-      right: 121px;
-      bottom: 15px;
+    right: 121px;
+    bottom: 15px;
   }
 }
 
@@ -124,6 +124,22 @@ body {
       &::before {
         left: 91px;
         top: 22px;
+      }
+    }
+    &__02 {
+      top: 193px;
+      right: -5px;
+      &::before {
+        right: 95px;
+        top: 16px;
+      }
+    }
+    &__03 {
+      bottom: -47px;
+      right: 237px;
+      &::before {
+        left: 19px;
+        top: -22px;
       }
     }
   }

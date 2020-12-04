@@ -357,6 +357,9 @@ body {
   &__btn {
     padding: 1.4rem 3.2rem;
     cursor: pointer;
+    &:focus {
+      outline: none;
+    }
   }
 }
 

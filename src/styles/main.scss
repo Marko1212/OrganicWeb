@@ -511,7 +511,19 @@ line-height: 1.5;
   padding-bottom: 160px;
   &__text {
     font-size: 1.5rem;
-    max-width: 725px;
+    line-height: 1.5;
+    margin-top: 3.75rem;
+  }
+}
+
+.section-catalog {
+  background-image: url("../img/bg-5.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 160px;
+  &__text {
+    font-size: 1.5rem;
     line-height: 1.5;
     margin-top: 3.75rem;
   }

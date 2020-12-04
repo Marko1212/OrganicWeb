@@ -499,3 +499,17 @@ line-height: 1.5;
   }
   
 }
+
+.section-new {
+  background-image: url("../img/bg-4.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 160px;
+  &__text {
+    font-size: 1.5rem;
+    max-width: 690px;
+    line-height: 1.5;
+    margin-top: 3.75rem;
+  }
+}

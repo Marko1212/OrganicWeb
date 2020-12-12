@@ -97,7 +97,7 @@
     />
     <link rel="stylesheet" href="styles/main.css" />
     <style>
-     /*  @import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,700;1,700&family=Jost:wght@400;500&display=swap"); */
+      /*  @import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,700;1,700&family=Jost:wght@400;500&display=swap"); */
       /*zbog greske u konsoli, stilovi iskopirani u src/styles/vendor folder (stack overflow), datoteka : _libs.scss */
     </style>
   </head>
@@ -667,22 +667,42 @@
     <section class="section-delivery">
       <div class="wrapper">
         <h2 class="title">Доставка и <span>оплата</span></h2>
-      </div>
-      <div class="box-delivery">
-        <div class="box-delivery-item">
-          <div class="ml">
-            <p class="box-delivery__text">Мы доставляем ваши заказы курьером  в специально оборудованном транспорте.</p>
-            <p class="box-delivery__text">
-              Компания Healthly food предлагает самые удобные и быстрые способы доставки по всей стране. Посмотреть подробные условия и географию вы можете по этой <a href="#" class="box-delivery__link">ссылке</a>
-            </p>
+
+        <div class="box-delivery">
+          <div class="box-delivery-item">
+            <div class="ml">
+              <p class="box-delivery__text">
+                Мы доставляем ваши заказы курьером в специально оборудованном
+                транспорте.
+              </p>
+              <p class="box-delivery__text">
+                Компания Healthly food предлагает самые удобные и быстрые
+                способы доставки по всей стране. Посмотреть подробные условия и
+                географию вы можете по этой
+                <a href="#" class="box-delivery__link">ссылке</a>
+              </p>
+            </div>
+          </div>
+          <div class="box-delivery-item">
+            <div class="mr">
+              <p class="box-delivery__text">
+                Вы можете оплатить заказ наличными или картой курьеру, либо
+                воспользоваться функцией онлайн-оплаты и получить
+                <span class="box-delivery__span">скидку&nbsp;5%.</span>
+              </p>
+              <ul class="box-delivery-list">
+                <li class="box-delivery-list__item box-delivery-list__mc"></li>
+                <li
+                  class="box-delivery-list__item box-delivery-list__visa"
+                ></li>
+                <li
+                  class="box-delivery-list__item box-delivery-list__paypal"
+                ></li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="box-delivery-item">
-          <p class="box-delivery__text">Вы можете оплатить заказ наличными или картой курьеру, либо воспользоваться функцией онлайн-оплаты и получить <span class="box-delivery__span">скидку 5%.</span></p>
-          <ul>
-            
-          </ul>
-        </div>
+      </div>
     </section>
     @@include("../blocks/modules/footer/footer.html")
     <script
@@ -737,6 +757,6 @@
       });
     </script>
     <script src="js/main.js"></script>
-   <!--  <script src="js/vendor.js"></script> eventualni js plagini ovde -->
+    <!--  <script src="js/vendor.js"></script> eventualni js plagini ovde -->
   </body>
 </html>

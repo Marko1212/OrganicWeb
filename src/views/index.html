@@ -97,7 +97,9 @@
     />
     <link rel="stylesheet" href="styles/main.css" />
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,700;1,700&family=Jost:wght@400;500&display=swap");
+      /* @import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,700;1,700&family=Jost:wght@400;500&display=swap"); */
+      /*zbog greske u konsoli, stilovi iskopirani u vendor folder, datoteka : _libs.scss */
+      /*takodje sam dodao vendor.js fajl u dist/js folder, jer je bila greska u konsoli */
     </style>
   </head>
   <body>
@@ -667,6 +669,16 @@
       <div class="wrapper">
         <h2 class="title">Доставка и <span>оплата</span></h2>
       </div>
+      <div class="box-delivery">
+        <div class="box-delivery-item">
+          <div class="ml">
+            <p class="box-delivery__text">Мы доставляем ваши заказы курьером  в специально оборудованном транспорте.</p>
+            <p class="box-delivery__text">
+              Компания Healthly food предлагает самые удобные и быстрые способы доставки по всей стране. Посмотреть подробные условия и географию вы можете по этой <a href="#" class="box-delivery__link">ссылке</a>
+            </p>
+          </div>
+        </div>
+        <div class="box-delivery-item"></div>
     </section>
     @@include("../blocks/modules/footer/footer.html")
     <script

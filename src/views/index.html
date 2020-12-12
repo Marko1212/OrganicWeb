@@ -98,8 +98,7 @@
     <link rel="stylesheet" href="styles/main.css" />
     <style>
      /*  @import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,700;1,700&family=Jost:wght@400;500&display=swap"); */
-      /*zbog greske u konsoli, stilovi iskopirani u vendor folder, datoteka : _libs.scss */
-      /*takodje sam dodao vendor.js fajl u dist/js folder, jer je bila greska u konsoli */
+      /*zbog greske u konsoli, stilovi iskopirani u src/styles/vendor folder (stack overflow), datoteka : _libs.scss */
     </style>
   </head>
   <body>
@@ -679,7 +678,10 @@
           </div>
         </div>
         <div class="box-delivery-item">
-          <p class="box-delivery__text">Вы можете оплатить заказ наличными или картой курьеру, либо воспользоваться функцией онлайн-оплаты и получить <span>скидку 5%.</span></p>
+          <p class="box-delivery__text">Вы можете оплатить заказ наличными или картой курьеру, либо воспользоваться функцией онлайн-оплаты и получить <span class="box-delivery__span">скидку 5%.</span></p>
+          <ul>
+            
+          </ul>
         </div>
     </section>
     @@include("../blocks/modules/footer/footer.html")
@@ -735,6 +737,6 @@
       });
     </script>
     <script src="js/main.js"></script>
-   <!--  <script src="js/vendor.js"></script> -->
+   <!--  <script src="js/vendor.js"></script> eventualni js plagini ovde -->
   </body>
 </html>

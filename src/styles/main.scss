@@ -726,6 +726,11 @@ line-height: 1.5;
   font-size: 1.12rem;
   line-height: 1.5;
   }
+  &__link {
+    color: $gray;
+    border-bottom: 1px solid $gray;
+    text-decoration: none;
+  }
   }
 
 

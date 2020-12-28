@@ -1,7 +1,7 @@
 .footer {
     border-top: 1px solid $gray;
-    padding-top: 30px;
-    padding-bottom: 20px;
+    padding-top: 77px;
+    padding-bottom: 60px;
 
     .logo {
         width: 179px;
@@ -70,6 +70,22 @@
 .box-copyright {
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;    
+    margin-top: 42px;
+
+    &__copy {
+        opacity: 0.6;
+    }
+
+    &__text {
+        color: $lightGray;
+        position: relative;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $gray;
+        opacity: 0.6;
+        transition: 0.2s ease;
+    }
 }
 

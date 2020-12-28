@@ -15,7 +15,19 @@
     &-item {
         display: flex;
         justify-content: space-between;
-        flex: 0 0 60%
+        flex: 0 0 66.4%
+    }
+}
+
+.box-footer-list {
+    font-size: 1.12rem;
+    list-style-type: none;
+    &__item {
+        margin-bottom: 1.62rem;
+    }
+    &__tel {
+        font-size: 1.68rem;
+        margin-bottom: 2.06rem;
     }
 }
 
@@ -23,6 +35,36 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    list-style-type: none;
+
+    &__link {
+        width: 48px;
+        height: 48px;
+        border: 2px solid $gray;
+        border-radius: 100%;
+        background-repeat: no-repeat;
+        display: block;
+        background-position: center center;
+        opacity: 0.8;
+        transition: 0.2s ease;
+    }
+
+    &__vk {
+        background-image: url(../../../img/vk.svg);
+        background-size: 23px 18px;
+    }
+
+    &__inst {
+        background-image: url(../../../img/instagram.svg);
+        background-size: 18px 18px;
+    }
+
+    &__fb {
+        background-image: url(../../../img/facebook.svg);
+        background-size: 18px 18px;
+    }
+
+
 }
 
 .box-copyright {
@@ -30,6 +72,4 @@
     justify-content: space-between;
     margin-top: 50px;    
 }
-
-
 

@@ -56,6 +56,10 @@ body {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+
+  @media(max-width: 1350px) {
+    max-width: 1140px;
+  }
 }
 
 .section-main {
@@ -73,26 +77,45 @@ body {
   &__tomato {
     right: 121px;
     bottom: 140px;
+
+    @media(max-width:1700px) {
+      right: 10px;
+    }
   }
 
   &__avocado {
     top: 46px;
     right: -25px;
+
+    @media(max-width:1700px) {
+      right: -61px;
+      top: 101px;
+      width: 129px;
+    }
   }
 
   &__cucumber {
-    top: 0px;
+    top: 0;
     left: 36%;
   }
 
   &__pepper {
     left: 40px;
     top: 40%;
+
+    @media(max-width:1700px) {
+      left: -1px;
+      top: 50%;
+    }
   }
 
   &__beans {
     left: 0px;
     bottom: 175px;
+
+    @media(max-width:1700px) {
+      display: none;
+    }
   }
 }
 
@@ -103,6 +126,10 @@ body {
 
   &-text {
     flex: 0 0 40%;
+
+    @media(max-width:1350px) {
+      flex: 0 0 45%;
+    }
 
     &__description {
       font-size: 1.12rem;
@@ -126,6 +153,10 @@ body {
       img {
         border-radius: 100%;
         box-shadow: 15px 48px 42px 0px rgba($gray, $alpha);
+
+        @media(max-width: 1350px) {
+          width: 427px;
+        }
       }
     }
 
@@ -166,7 +197,10 @@ body {
     &__01 {
       left: 58px;
       top: 45px;
-
+      @media(max-width:1350px) {
+         left:79px;
+         top:56px;
+      }
       &::before {
         left: 91px;
         top: 22px;
@@ -176,7 +210,9 @@ body {
     &__02 {
       top: 193px;
       right: -7px;
-
+      @media(max-width:1350px) {
+        right:-38px;
+     }
       &::before {
         right: 98px;
         top: 18px;
@@ -186,7 +222,9 @@ body {
     &__03 {
       bottom: -49px;
       right: 235px;
-
+      @media(max-width:1350px) {
+        bottom:-63px;
+     }
       &::before {
         left: 19px;
         top: -24px;
@@ -293,6 +331,10 @@ body {
     max-width: 58%;
     transform: translate(0, 241px);
     transition: 0.3s ease;
+    @media(max-width:1350px) {
+    max-width: 80%;
+    transform: translate(0, 255px);
+    }
 
     &__title {
       font-size: 1.875rem;
@@ -491,6 +533,9 @@ body {
 
   &-item {
     flex: 0 0 49%;
+    @media(max-width:1350px){
+      flex:0 0 50%;
+    }
   }
 
   &__text {
@@ -512,6 +557,9 @@ body {
 
   &__item {
     margin-left: 85px;
+    @media(max-width:1350px) {
+      margin-left: 55px;
+    }
 
     span {
       display: block;
@@ -881,9 +929,11 @@ body {
     position: relative;
     padding-left: 58px;
     margin-bottom: 20px;
+
     &:last-child {
       margin-bottom: 0;
     }
+
     &::before {
       content: '';
       display: block;
@@ -892,7 +942,7 @@ body {
       background-repeat: no-repeat;
       position: absolute;
       left: 0;
-      top:calc(50%-12.5px);
+      top: calc(50%-12.5px);
     }
   }
 
@@ -923,17 +973,20 @@ body {
   border: 2px solid rgba($gray, $alpha);
   border-radius: 20px;
   padding: 2rem 3.5rem 1.8rem 3.5rem;
+
   &__h3 {
     font-family: "Cormorant", serif;
     font-size: 1.87rem;
     margin-bottom: 31px;
   }
+
   &__label {
     display: block;
     font-size: 0.75rem;
     margin-bottom: 10px;
     margin-left: 5px;
   }
+
   &__input {
     display: block;
     width: 100%;
@@ -956,6 +1009,7 @@ body {
     margin-top: 20px;
     line-height: 1.5;
   }
+
   &__link {
     color: $gray;
     border-bottom: 1px solid rgba($gray, 0.6);
@@ -965,9 +1019,9 @@ body {
   .btn {
     margin-top: 11px;
     padding: 1.5rem 3.1rem;
+
     &:focus {
       outline: none;
     }
   }
 }
-

@@ -409,6 +409,9 @@ body {
     font-size: 1.875rem;
     font-family: "Cormorant", serif;
     margin-bottom: 26px;
+    @media(max-width:1350px) {
+      min-height: 68px;
+    }
 
   }
 
@@ -437,6 +440,9 @@ body {
   &__btn {
     padding: 1.4rem 3.2rem;
     cursor: pointer;
+    @media(max-width:1350px) {
+      padding: 1.4rem 2rem;
+    }
 
     &:focus {
       outline: none;
@@ -463,12 +469,19 @@ body {
     &:hover {
       opacity: 1;
     }
+    @media(max-width:1350px) {
+      width:2.5rem;
+      height:2.5rem;
+    }
   }
 
   &__number {
     border: none;
     width: 40px;
     text-align: center;
+    @media(max-width:1350px) {
+      width: 30px;
+    }
   }
 
   &__minus {

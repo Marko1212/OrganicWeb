@@ -49,6 +49,9 @@
     background-size: 1rem 0.87rem;
     background-repeat: no-repeat;
     background-position: center center;
+    &:focus {
+        outline: none;
+    }
     }
     &__count {
         position: absolute;

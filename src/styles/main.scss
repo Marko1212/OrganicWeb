@@ -57,8 +57,12 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 
-  @media(max-width: 1350px) {
+  @media(max-width: 1440px) {
     max-width: 1140px;
+  }
+
+  @media(max-width: 1200px) {
+    max-width: 960px;
   }
 }
 
@@ -127,7 +131,7 @@ body {
   &-text {
     flex: 0 0 40%;
 
-    @media(max-width:1350px) {
+    @media(max-width:1440px) {
       flex: 0 0 45%;
     }
 
@@ -154,7 +158,7 @@ body {
         border-radius: 100%;
         box-shadow: 15px 48px 42px 0px rgba($gray, $alpha);
 
-        @media(max-width: 1350px) {
+        @media(max-width: 1440px) {
           width: 427px;
         }
       }
@@ -197,7 +201,7 @@ body {
     &__01 {
       left: 58px;
       top: 45px;
-      @media(max-width:1350px) {
+      @media(max-width:1440px) {
          left:79px;
          top:56px;
       }
@@ -210,7 +214,7 @@ body {
     &__02 {
       top: 193px;
       right: -7px;
-      @media(max-width:1350px) {
+      @media(max-width:1440px) {
         right:-38px;
      }
       &::before {
@@ -222,7 +226,7 @@ body {
     &__03 {
       bottom: -49px;
       right: 235px;
-      @media(max-width:1350px) {
+      @media(max-width:1440px) {
         bottom:-63px;
      }
       &::before {
@@ -331,7 +335,7 @@ body {
     max-width: 58%;
     transform: translate(0, 241px);
     transition: 0.3s ease;
-    @media(max-width:1350px) {
+    @media(max-width:1440px) {
     max-width: 80%;
     transform: translate(0, 255px);
     }
@@ -409,7 +413,7 @@ body {
     font-size: 1.875rem;
     font-family: "Cormorant", serif;
     margin-bottom: 26px;
-    @media(max-width:1350px) {
+    @media(max-width:1440px) {
       min-height: 68px;
     }
 
@@ -440,7 +444,7 @@ body {
   &__btn {
     padding: 1.4rem 3.2rem;
     cursor: pointer;
-    @media(max-width:1350px) {
+    @media(max-width:1440px) {
       padding: 1.4rem 2rem;
     }
 
@@ -469,7 +473,7 @@ body {
     &:hover {
       opacity: 1;
     }
-    @media(max-width:1350px) {
+    @media(max-width:1440px) {
       width:2.5rem;
       height:2.5rem;
     }
@@ -479,7 +483,7 @@ body {
     border: none;
     width: 40px;
     text-align: center;
-    @media(max-width:1350px) {
+    @media(max-width:1440px) {
       width: 30px;
     }
   }
@@ -546,7 +550,7 @@ body {
 
   &-item {
     flex: 0 0 49%;
-    @media(max-width:1350px){
+    @media(max-width:1440px){
       flex:0 0 50%;
     }
   }
@@ -570,7 +574,7 @@ body {
 
   &__item {
     margin-left: 85px;
-    @media(max-width:1350px) {
+    @media(max-width:1440px) {
       margin-left: 55px;
     }
 
@@ -732,6 +736,10 @@ body {
     font-family: "Cormorant", serif;
     margin-bottom: 17px;
 
+    @media(max-width:1440px) {
+      min-height: 69px;
+    }
+
   }
 
   &__description {
@@ -740,6 +748,10 @@ body {
     margin-bottom: 0;
     min-height: 52px;
     max-width: 96%;
+
+    @media(max-width: 1440px) {
+      min-height: 80px;
+    }
   }
 
   &__price {

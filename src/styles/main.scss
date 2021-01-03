@@ -646,7 +646,7 @@ body {
 
     @media(max-width: 1200px) {
       max-width: 741px;
-      margin: 0 auto 38px;
+      margin: 0 auto 60px;
     }
   }
 }
@@ -661,6 +661,12 @@ body {
   font-family: "Cormorant", serif;
   font-size: 1.87rem;
   font-style: italic;
+
+  @media(max-width:1200px) {
+    justify-content: space-between;
+    max-width: 500px;
+    margin: 0 auto;
+  }
 
   &__item {
     margin-left: 85px;

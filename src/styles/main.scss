@@ -45,6 +45,7 @@ body {
 
 .ml {
   margin-left: 7.6rem;
+
   @media(max-width:1200px) {
     margin-left: 0;
   }
@@ -130,7 +131,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+
   @media(max-width:1200px) {
     flex-direction: column;
   }
@@ -152,6 +153,7 @@ body {
       line-height: 1.51;
       margin-top: 60px;
       margin-bottom: 77px;
+
       @media(max-width:1200px) {
         max-width: 560px;
         margin-bottom: 45px;
@@ -162,6 +164,7 @@ body {
       @media(min-width:1201px) {
         display: none;
       }
+
       @media(max-width:1200px) {
         display: block;
         width: 427px;
@@ -175,9 +178,11 @@ body {
     border-radius: 100%;
     padding: 53px;
     position: relative;
+
     @media(max-width:1200px) {
       display: none;
     }
+
     &__image {
       border: 1px solid rgba($gray, $alpha);
       border-radius: 100%;
@@ -232,10 +237,12 @@ body {
     &__01 {
       left: 58px;
       top: 45px;
+
       @media(max-width:1440px) {
-         left:79px;
-         top:56px;
+        left: 79px;
+        top: 56px;
       }
+
       &::before {
         left: 91px;
         top: 22px;
@@ -245,9 +252,11 @@ body {
     &__02 {
       top: 193px;
       right: -7px;
+
       @media(max-width:1440px) {
-        right:-38px;
-     }
+        right: -38px;
+      }
+
       &::before {
         right: 98px;
         top: 18px;
@@ -257,9 +266,11 @@ body {
     &__03 {
       bottom: -49px;
       right: 235px;
+
       @media(max-width:1440px) {
-        bottom:-63px;
-     }
+        bottom: -63px;
+      }
+
       &::before {
         left: 19px;
         top: -24px;
@@ -366,9 +377,14 @@ body {
     max-width: 58%;
     transform: translate(0, 241px);
     transition: 0.3s ease;
+
     @media(max-width:1440px) {
-    max-width: 80%;
-    transform: translate(0, 255px);
+      max-width: 80%;
+      transform: translate(0, 255px);
+    }
+
+    @media(max-width:1200px) {
+      transform: translate(0, 205px);
     }
 
     &__title {
@@ -444,6 +460,7 @@ body {
     font-size: 1.875rem;
     font-family: "Cormorant", serif;
     margin-bottom: 26px;
+
     @media(max-width:1440px) {
       min-height: 68px;
     }
@@ -475,6 +492,7 @@ body {
   &__btn {
     padding: 1.4rem 3.2rem;
     cursor: pointer;
+
     @media(max-width:1440px) {
       padding: 1.4rem 2rem;
     }
@@ -504,9 +522,10 @@ body {
     &:hover {
       opacity: 1;
     }
+
     @media(max-width:1440px) {
-      width:2.5rem;
-      height:2.5rem;
+      width: 2.5rem;
+      height: 2.5rem;
     }
   }
 
@@ -514,6 +533,7 @@ body {
     border: none;
     width: 40px;
     text-align: center;
+
     @media(max-width:1440px) {
       width: 30px;
     }
@@ -564,12 +584,37 @@ body {
   background-image: url('../img/arrow-next.svg');
 }
 
+.slick-dots {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  text-indent: -9999px;
+
+  &>li {
+    width: 10px;
+    height: 10px;
+    background: $gray;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 100%;
+    margin-top: 30px;
+  }
+
+  &>li.slick-active {
+    background: $orange;
+  }
+}
+
 .section-advantage {
   background-image: url("../img/bg-3.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding-bottom: 208px;
+
+  @media(max-width: 1200px) {
+    text-align: center;
+  }
 
 }
 
@@ -579,16 +624,30 @@ body {
   align-items: center;
   margin-top: 65px;
 
+  @media(max-width: 1200px) {
+    flex-direction: column;
+  }
+
   &-item {
     flex: 0 0 49%;
-    @media(max-width:1440px){
-      flex:0 0 50%;
+
+    @media(max-width:1440px) {
+      flex: 0 0 50%;
+    }
+
+    @media(max-width:1200px) {
+      width: 100%;
     }
   }
 
   &__text {
     font-size: 1.12rem;
     line-height: 1.5;
+
+    @media(max-width: 1200px) {
+      max-width: 741px;
+      margin: 0 auto 38px;
+    }
   }
 }
 
@@ -605,8 +664,13 @@ body {
 
   &__item {
     margin-left: 85px;
+
     @media(max-width:1440px) {
       margin-left: 55px;
+    }
+
+    @media(max-width:1200px) {
+      margin-left: 0px;
     }
 
     span {

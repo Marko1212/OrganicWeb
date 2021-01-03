@@ -636,7 +636,7 @@ ul {
 .logo {
   display: block;
   background-repeat: no-repeat;
-  background-image: url(../../../img/logo.svg);
+  background-image: url(../img/logo.svg);
   width: 120px;
   height: 32px;
   margin-right: 120px;
@@ -719,17 +719,17 @@ ul {
 }
 
 .box-footer-social__vk {
-  background-image: url(../../../img/vk.svg);
+  background-image: url(../img/vk.svg);
   background-size: 23px 18px;
 }
 
 .box-footer-social__inst {
-  background-image: url(../../../img/instagram.svg);
+  background-image: url(../img/instagram.svg);
   background-size: 18px 18px;
 }
 
 .box-footer-social__fb {
-  background-image: url(../../../img/facebook.svg);
+  background-image: url(../img/facebook.svg);
   background-size: 18px 18px;
 }
 

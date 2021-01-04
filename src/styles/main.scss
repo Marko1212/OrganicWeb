@@ -1050,6 +1050,10 @@ body {
 .box-form-list {
   list-style-type: none;
   margin-top: 62px;
+  @media (max-width:990px) {
+    display: flex;
+    justify-content: center;
+}
 
   &__item {
     position: relative;

@@ -29,6 +29,10 @@
         font-size: 1.68rem;
         margin-bottom: 2.06rem;
     }
+    &__link {
+        color: $gray;
+        text-decoration: none;
+    }
 }
 
 .box-footer-social {
@@ -47,6 +51,9 @@
         background-position: center center;
         opacity: 0.8;
         transition: 0.2s ease;
+        &:hover {
+            opacity: 1;
+        }
     }
 
     &__vk {

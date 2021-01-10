@@ -804,6 +804,10 @@ body {
     flex: 0 0 24%;
     margin-bottom: 20px;
 
+    @media (max-width: 1200px) {
+      flex: 0 0 49%;
+  }
+
     &:hover {
       box-shadow: 0 0 0 2px rgba($gray, $alpha);
     }

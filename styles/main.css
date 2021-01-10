@@ -699,6 +699,11 @@ ul {
   margin-bottom: 2.06rem;
 }
 
+.box-footer-list__link {
+  color: #27300f;
+  text-decoration: none;
+}
+
 .box-footer-social {
   display: flex;
   justify-content: space-between;
@@ -716,6 +721,10 @@ ul {
   background-position: center center;
   opacity: 0.8;
   transition: 0.2s ease;
+}
+
+.box-footer-social__link:hover {
+  opacity: 1;
 }
 
 .box-footer-social__vk {
@@ -1916,6 +1925,13 @@ body {
 
   .box-advantage-list__item {
     margin-left: 0px;
+  }
+}
+
+@media (max-width: 990px) {
+  .box-form-list {
+    display: flex;
+    justify-content: center;
   }
 }
 /*# sourceMappingURL=maps/main.css.map */

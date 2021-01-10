@@ -1864,6 +1864,10 @@ body {
     margin-right: 22px;
   }
 
+  .box-footer-item {
+    flex: 0 0 72%;
+  }
+
   .ml {
     margin-left: 0;
   }
@@ -1925,6 +1929,10 @@ body {
 
   .box-advantage-list__item {
     margin-left: 0px;
+  }
+
+  .catalog-item {
+    flex: 0 0 49%;
   }
 }
 

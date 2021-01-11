@@ -68,6 +68,10 @@ body {
   @media(max-width: 1200px) {
     max-width: 960px;
   }
+
+  @media(max-width: 990px) {
+    max-width: 100%;
+  }
 }
 
 .section-main {
@@ -806,6 +810,7 @@ body {
 
     @media (max-width: 1200px) {
       flex: 0 0 49%;
+      text-align: center;
   }
 
     &:hover {
@@ -883,6 +888,10 @@ body {
   display: flex;
   align-items: center;
   font-size: 1.5rem;
+
+  @media (max-width: 1200px) {
+    display: none;
+}
 
   &__minus,
   &__plus {

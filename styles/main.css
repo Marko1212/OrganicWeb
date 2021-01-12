@@ -1733,6 +1733,10 @@ body {
   padding-bottom: 4px;
 }
 
+.modal-header button.close:focus {
+  outline: none;
+}
+
 .modal-body {
   padding: 1rem 1rem 3.2rem 1rem;
 }

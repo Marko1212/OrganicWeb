@@ -451,9 +451,9 @@ a.no-underline {
   }
 
   &-hover {
-    padding: 2rem 2.25rem;
     transition: 0.3s ease;
     overflow: hidden;
+    padding: 2.75rem 2.25rem;
 
     &::before {
       content: "";
@@ -598,6 +598,7 @@ a.no-underline {
         display: block;
         width: 1.875rem;
         height: 1.875rem;
+        background-repeat: no-repeat;
         background-image: url(../img/plus.svg);
 
         @media (max-width:360px) {
@@ -812,6 +813,7 @@ a.no-underline {
   list-style-type: none;
   justify-content: center;
   text-indent: -9999px;
+  margin-top: 30px;
 
   &>li {
     width: 10px;
@@ -820,7 +822,6 @@ a.no-underline {
     margin-right: 10px;
     margin-left: 10px;
     border-radius: 100%;
-    margin-top: 30px;
   }
 
   &>li.slick-active {

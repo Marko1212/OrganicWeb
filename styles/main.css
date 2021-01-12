@@ -654,6 +654,7 @@ ul {
 }
 
 .nav-link {
+  padding: 0;
   text-decoration: none;
   color: #27300f;
   transition: 0.3s ease;

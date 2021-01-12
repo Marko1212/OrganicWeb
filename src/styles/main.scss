@@ -1185,6 +1185,11 @@ body {
       top: 37px;
       right: 34px;
       padding-bottom: 4px;
+
+      &:focus {
+        outline: none;
+      }
+      
   }
 }
 .modal-body {

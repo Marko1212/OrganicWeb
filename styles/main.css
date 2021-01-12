@@ -1713,6 +1713,88 @@ body {
   outline: none;
 }
 
+.modal-header {
+  border-bottom: none;
+  height: 50px;
+  padding: 0;
+}
+
+.modal-header button.close {
+  border: 2px solid #27300f;
+  border-radius: 100%;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  line-height: 0;
+  font-weight: 300;
+  position: absolute;
+  top: 37px;
+  right: 34px;
+  padding-bottom: 4px;
+}
+
+.modal-body {
+  padding: 1rem 1rem 3.2rem 1rem;
+}
+
+.modal-social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  max-width: 210px;
+  margin: 0 auto;
+}
+
+.modal-social__link {
+  width: 48px;
+  height: 48px;
+  border: 2px solid #27300f;
+  border-radius: 100%;
+  background-repeat: no-repeat;
+  display: block;
+  background-position: center center;
+  opacity: 0.8;
+  transition: 0.2s ease;
+}
+
+.modal-social__link:hover {
+  opacity: 1;
+}
+
+.modal-social__vk {
+  background-image: url(../img/vk.svg);
+  background-size: 23px 18px;
+}
+
+.modal-social__inst {
+  background-image: url(../img/instagram.svg);
+  background-size: 18px 18px;
+}
+
+.modal-social__fb {
+  background-image: url(../img/facebook.svg);
+  background-size: 18px 18px;
+}
+
+.modal-list {
+  list-style-type: none;
+  text-align: center;
+  margin-bottom: 39px;
+}
+
+.modal-list__item {
+  margin-bottom: 1.37rem;
+}
+
+.modal-list__link {
+  color: #27300f;
+}
+
+a.no-underline {
+  text-decoration: none;
+}
+
 @media screen and (min-width: 36rem) {
   .container {
     max-width: 31.875rem;
